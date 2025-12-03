@@ -108,6 +108,4 @@ View results in the Streamlit dashboard (Metrics page).
 - **Latency**: <3s end-to-end (CPU)
 - **Memory**: <2GB RAM
 
-## License
 
-MIT License
