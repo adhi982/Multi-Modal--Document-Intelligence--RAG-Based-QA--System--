@@ -1,0 +1,952 @@
+{
+  "num_queries": 27,
+  "aggregated_metrics": {
+    "recall@1": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "recall@5": {
+      "mean": 0.030864197530864196,
+      "std": 0.11145351904486289,
+      "min": 0.0,
+      "max": 0.5
+    },
+    "recall@10": {
+      "mean": 0.07936507936507936,
+      "std": 0.1831712102975001,
+      "min": 0.0,
+      "max": 0.6666666666666666
+    },
+    "precision@1": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0
+    },
+    "precision@5": {
+      "mean": 0.014814814814814815,
+      "std": 0.052378280087892415,
+      "min": 0.0,
+      "max": 0.2
+    },
+    "precision@10": {
+      "mean": 0.022222222222222223,
+      "std": 0.04969039949999533,
+      "min": 0.0,
+      "max": 0.2
+    },
+    "reciprocal_rank": {
+      "mean": 0.04027042915931805,
+      "std": 0.094077930802746,
+      "min": 0.0,
+      "max": 0.3333333333333333
+    },
+    "average_precision": {
+      "mean": 0.03780129335684891,
+      "std": 0.08695944611064337,
+      "min": 0.0,
+      "max": 0.3333333333333333
+    }
+  },
+  "latency_stats": {
+    "retrieval": {
+      "mean": 763.4118666680513,
+      "median": 641.5785999997752,
+      "min": 617.4035000003641,
+      "max": 2156.923200003803,
+      "p95": 1759.7442899947046,
+      "p99": 2155.6011780013796,
+      "count": 27
+    },
+    "generation": {
+      "mean": 32569.41291481403,
+      "median": 31678.03819999972,
+      "min": 5497.203899998567,
+      "max": 61538.17739999795,
+      "p95": 52185.16048999736,
+      "p99": 59145.89358399795,
+      "count": 27
+    }
+  },
+  "faithfulness": {
+    "mean": 0.8222062868182789,
+    "std": 0.18113620027574512,
+    "faithful_percentage": 96.29629629629629
+  },
+  "per_query_results": [
+    {
+      "query": "What is the main topic of the document?",
+      "retrieved_pages": [
+        62,
+        61,
+        70,
+        65,
+        70,
+        40,
+        60,
+        3,
+        59,
+        5
+      ],
+      "ground_truth_pages": [
+        1,
+        2
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "TABLE FROM PAGE 62: Final Fanchart. (Source: pages 61, 62, 70)",
+      "faithfulness": 0.18181818181818182,
+      "is_faithful": false
+    },
+    {
+      "query": "What are the key findings of the report?",
+      "retrieved_pages": [
+        70,
+        62,
+        61,
+        65,
+        70,
+        40,
+        60,
+        50,
+        3,
+        69
+      ],
+      "ground_truth_pages": [
+        1,
+        2,
+        3
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.3333333333333333,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.1,
+        "reciprocal_rank": 0.1111111111111111,
+        "average_precision": 0.1111111111111111
+      },
+      "answer": "National Accounts Prices Government Finance Statistics External Sector Statistics Monetary and Financial Statistics Inter-sectoral Consistency Median Rating B A B A A A B C D Data Quality Characteristics Granularity 3/ Data Adequacy Assessment Rating. (Source: pages 61, 62, 70)",
+      "faithfulness": 0.8125,
+      "is_faithful": true
+    },
+    {
+      "query": "What is the overall economic outlook for Qatar?",
+      "retrieved_pages": [
+        67,
+        5,
+        77,
+        28,
+        73,
+        70,
+        24,
+        26,
+        16,
+        18
+      ],
+      "ground_truth_pages": [
+        2,
+        3,
+        4
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Growth normalization after the 2022 FIFA World Cup continued with signs of activities strengthening more recently. Fiscal and external surpluses softened mainly due to lower hydrocarbon prices. Banks are healthy but pockets of vulnerabilities remain. Reform momentum has strengthened, guided by the Third National Development Strategy (NDS3). Outlook and risks: Near-term growth is expected to strengthen gradually. The medium- term outlook is more favorable, bolstered by massive LNG production expansion and reform gains. Fiscal policy: The authorities’ commitment to continued fiscal prudence is welcome. The positive outlook provides an opportunity to accelerate revenue diversification including to introduce a value-added tax and broaden the corporate income tax, enhance spending efficiency and gradually align domestic energy prices with export prices, and reorient spending to enable private sector-driven growth. Adopting a full-fledged medium-term fiscal framework, anchored by the benchmark to ensure intergenerational equity, will enhance fiscal sustainability while securing priority spending. Greater fiscal transparency and risk management, including on Public-Private Partnerships, will support the strategy. Monetary and financial sector policies: The currency peg continues to serve the country well. (Source: pages 5, 67, 77)",
+      "faithfulness": 0.9632352941176471,
+      "is_faithful": true
+    },
+    {
+      "query": "What are the major risks mentioned?",
+      "retrieved_pages": [
+        61,
+        68,
+        3,
+        62,
+        65,
+        62,
+        62,
+        62,
+        62,
+        62
+      ],
+      "ground_truth_pages": [
+        5,
+        6
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Global risks: High: Medium Cyberthreats. Cyberattacks on physical or digital infrastructure (including digital currency and crypto assets), technical failures, or misuse of AI technologies trigger financial and economic instability. (Source: pages 3, 61, 68)",
+      "faithfulness": 0.8387096774193549,
+      "is_faithful": true
+    },
+    {
+      "query": "What reforms are highlighted in the document?",
+      "retrieved_pages": [
+        70,
+        61,
+        69,
+        62,
+        65,
+        70,
+        3,
+        5,
+        59,
+        40
+      ],
+      "ground_truth_pages": [
+        7,
+        8
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "The public debt ratio is projected to remain stable reflecting the sizeable primary surplus, stable economic conditions, and the objective of developing the domestic capital market. (Percent of GDP) Projection -30 -20 -10 0 10 20 30 40 50 2014 2016 2018 2020 2022 2024 2026 2028 2030 2032 1 52 -12 9 -57 -7 -80 -60 -40 0 20 40 60 80 Cumulative in the projection period Primary deficit Real Interest rate and relative inflation Real GDP growth Exch. rate depreciation Other flows Residual Change in the medium-term fiscal. (Source: pages 61, 69, 70)",
+      "faithfulness": 0.9240506329113924,
+      "is_faithful": true
+    },
+    {
+      "query": "What is Qatar's projected GDP growth?",
+      "retrieved_pages": [
+        67,
+        34,
+        9,
+        5,
+        36,
+        77,
+        4,
+        70,
+        28,
+        12
+      ],
+      "ground_truth_pages": [
+        3,
+        4
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.5,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.1,
+        "reciprocal_rank": 0.14285714285714285,
+        "average_precision": 0.14285714285714285
+      },
+      "answer": "Qatar has fiscal space to respond to a major growth slowdown. Fiscal policy should be anchored in a medium-term framework to reduce the risk of procyclicality. Continue to closely monitor banking sector developments to maintain financial stability. Accelerate structural reforms to boost economic diversification and non-hydrocarbon potential output. (Source: pages 9, 34, 67)",
+      "faithfulness": 0.8913043478260869,
+      "is_faithful": true
+    },
+    {
+      "query": "What is the expected inflation rate?",
+      "retrieved_pages": [
+        61,
+        3,
+        5,
+        63,
+        70,
+        62,
+        69,
+        60,
+        70,
+        62
+      ],
+      "ground_truth_pages": [
+        4,
+        5
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.5,
+        "recall@10": 0.5,
+        "precision@1": 0.0,
+        "precision@5": 0.2,
+        "precision@10": 0.1,
+        "reciprocal_rank": 0.3333333333333333,
+        "average_precision": 0.3333333333333333
+      },
+      "answer": "Financial Sector Assessment Program update. (Source: pages 3, 5, 61)",
+      "faithfulness": 0.5,
+      "is_faithful": true
+    },
+    {
+      "query": "What is the status of Qatar's fiscal balance?",
+      "retrieved_pages": [
+        67,
+        77,
+        73,
+        24,
+        70,
+        28,
+        69,
+        21,
+        5,
+        48
+      ],
+      "ground_truth_pages": [
+        6,
+        7
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "The Central Bank of Qatar continues to skillfully manage monetary and financial policies, preserving macroeconomic and financial stability and promoting sustainable growth. The authorities agree with staff’s assessment that the exchange rate peg continues to serve the Qatari economy well. They appreciated the IMF technical Assistance on liquidity management and plan to progressively implement its recommendations. The QCB maintains a robust regulatory framework and conducts effective supervision to ensure the health of the sector and to preempt any potential risks to financial stability. (Source: pages 67, 73, 77)",
+      "faithfulness": 0.9253731343283582,
+      "is_faithful": true
+    },
+    {
+      "query": "What factors are driving Qatar's medium-term growth?",
+      "retrieved_pages": [
+        67,
+        34,
+        5,
+        70,
+        24,
+        77,
+        16,
+        36,
+        73,
+        4
+      ],
+      "ground_truth_pages": [
+        3,
+        4,
+        5
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.3333333333333333,
+        "recall@10": 0.6666666666666666,
+        "precision@1": 0.0,
+        "precision@5": 0.2,
+        "precision@10": 0.2,
+        "reciprocal_rank": 0.3333333333333333,
+        "average_precision": 0.26666666666666666
+      },
+      "answer": "Growth normalization after the 2022 FIFA World Cup continued with signs of activities strengthening more recently. (Source: pages 5, 34, 67)",
+      "faithfulness": 0.7619047619047619,
+      "is_faithful": true
+    },
+    {
+      "query": "How is the banking sector performing?",
+      "retrieved_pages": [
+        60,
+        5,
+        70,
+        62,
+        62,
+        62,
+        62,
+        62,
+        62,
+        68
+      ],
+      "ground_truth_pages": [
+        10,
+        11
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "banks' claims in 1.5 0.5 stress (pct banks' assets) GFN financeability index (GFI) 5.0 Risk signal: 4/. (Source: pages 5, 60, 70)",
+      "faithfulness": 0.7142857142857143,
+      "is_faithful": true
+    },
+    {
+      "query": "What is the NPL (non-performing loan) situation?",
+      "retrieved_pages": [
+        3,
+        61,
+        69,
+        60,
+        70,
+        5,
+        62,
+        63,
+        59,
+        70
+      ],
+      "ground_truth_pages": [
+        11,
+        12
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "The IMF’s assessment of Qatar’s macroeconomic performance shows that the country is resilient to external shocks and has a favorable medium-term outlook, driven by significant increases in LNG production and the reforms under the Third National Development Strategy. Directors commended the authorities’ commitment to continued fiscal prudence and called for accelerating fiscal reforms. Directors welcomed the newly introduced risk-based supervision and recommended formalizing the financial safety net and continuing to adjust macroprudential policies to mitigate potential macro-financial risks. Directors agreed that the exchange rate peg continues to serve Qatar well. They concurred that, as conditions allow, strengthening the operational framework would further enhance monetary policy transmission. Directors supported the authorities' strategy to build a more diversified, private sector-led, and knowledge-based economy. They recommended fostering innovation and business efficiency and enhancing human capital by attracting and retaining more high-skilled expatriate workers, improving Qatari nationals’ employment in the private sector, and further increasing female labor force participation. (Source: pages 3, 61, 69)",
+      "faithfulness": 0.9349593495934959,
+      "is_faithful": true
+    },
+    {
+      "query": "How is credit growth trending?",
+      "retrieved_pages": [
+        61,
+        39,
+        60,
+        40,
+        45,
+        63,
+        5,
+        62,
+        70,
+        63
+      ],
+      "ground_truth_pages": [
+        10,
+        11
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "The public debt ratio is projected to remain stable reflecting the sizeable primary surplus, stable economic conditions, and the objective of developing the domestic capital market. (Percent of GDP) Projection -30 -20 -10 0 10 20 30 40 50 2014 2016 2018 2020 2022 2024 2026 2028 2030 2032 1 52 -12 9 -57 -7 -80 -60 -40 0 20 40 60 80 Cumulative in the projection period Primary deficit Real Interest rate and relative inflation Real GDP growth Exch. rate depreciation Other flows Residual Change in public debt. (Source: pages 39, 60, 61)",
+      "faithfulness": 0.9230769230769231,
+      "is_faithful": true
+    },
+    {
+      "query": "How did the real estate sector perform?",
+      "retrieved_pages": [
+        68,
+        3,
+        5,
+        61,
+        69,
+        39,
+        60,
+        70,
+        59,
+        70
+      ],
+      "ground_truth_pages": [
+        12,
+        13
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Executive Directors welcomed Qatar’s continued resilience to external shocks and its favorable medium-term outlook, driven by significant increases in LNG production and the reforms under the Third National Development Strategy. Directors agreed that maintaining prudent macroeconomic policies and accelerating reform efforts would further solidify macroeconomic stability and resilience to shocks while boosting prosperity. Directors commended the authorities’ commitment to continued fiscal prudence and called for accelerating fiscal reforms. (Source: pages 3, 5, 68)",
+      "faithfulness": 0.9473684210526315,
+      "is_faithful": true
+    },
+    {
+      "query": "What fiscal reforms are recommended?",
+      "retrieved_pages": [
+        5,
+        69,
+        70,
+        65,
+        60,
+        63,
+        70,
+        3,
+        59,
+        64
+      ],
+      "ground_truth_pages": [
+        15,
+        16
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "fiscal prudence is welcome. The positive outlook provides an opportunity to accelerate revenue diversification including to introduce a value-added tax and broaden the corporate income tax, enhance spending efficiency and gradually align domestic energy prices with export prices, and reorient spending to enable private sector-driven growth. Adopting a full-fledged medium-term fiscal framework, anchored by the benchmark to ensure intergenerational equity, will enhance fiscal sustainability while securing priority spending. Greater fiscal transparency and risk management, including on Public-Private Partnerships, will support the strategy. Monetary and financial sector policies: The currency peg continues to serve the country well. Efforts to strengthen liquidity. (Source: pages 5, 69, 70)",
+      "faithfulness": 0.9397590361445783,
+      "is_faithful": true
+    },
+    {
+      "query": "What are the recommendations for monetary policy?",
+      "retrieved_pages": [
+        69,
+        5,
+        70,
+        60,
+        3,
+        70,
+        62,
+        35,
+        59,
+        71
+      ],
+      "ground_truth_pages": [
+        16,
+        17
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Qatar's macroeconomic statistics are in a good state. The positive outlook provides an opportunity to accelerate revenue diversification including to introduce a value-added tax and broaden the corporate income tax, enhance spending efficiency and gradually align domestic energy prices with export prices, and reorient spending to enable private sector-driven growth. Adopting a full-fledged medium-term fiscal framework, anchored by the benchmark to ensure intergenerational equity, will enhance fiscal sustainability while securing priority spending. Greater fiscal transparency and risk management, including on Public-Private Partnerships, will support the strategy. (Source: pages 5, 69, 70)",
+      "faithfulness": 0.9054054054054054,
+      "is_faithful": true
+    },
+    {
+      "query": "What structural reforms does the IMF suggest?",
+      "retrieved_pages": [
+        2,
+        1,
+        69,
+        5,
+        3,
+        70,
+        24,
+        71,
+        73,
+        74
+      ],
+      "ground_truth_pages": [
+        17,
+        18
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Washington, DC – February 11, 2025: On January 27, 2025, the Executive Board of the International Monetary Fund (IMF) concluded the Article IV consultation1 with Qatar. Growth normalization after the 2022 FIFA World Cup continued, with signs of strengthening activities more recently. (Source: pages 1, 2, 69)",
+      "faithfulness": 0.8809523809523809,
+      "is_faithful": true
+    },
+    {
+      "query": "What are the priorities under NDS3?",
+      "retrieved_pages": [
+        3,
+        69,
+        65,
+        61,
+        62,
+        59,
+        70,
+        70,
+        40,
+        63
+      ],
+      "ground_truth_pages": [
+        18,
+        19
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "The outlook for Qatar’s macroeconomic stability and prosperity is favourable, driven by significant increases in LNG production and the reforms under the Third National Development Strategy. However, if ambitious NDS3 initiatives lead to resource misallocation, both the public finance and growth prospect would be affected. Executive Board Assessment2 Executive Directors agreed that maintaining prudent macroeconomic policies and accelerating reform efforts would further solidify macroeconomic stabilization and resilience to shocks while boosting prosperity. Directors welcomed the authorities’ commitment to continued fiscal prudence and called for accelerating fiscal reforms. They recommended adopting a medium-term fiscal anchor to help ensure intergenerational equity, and reiterated the need to accelerate revenue diversification, particularly by introducing the value-added. (Source: pages 3, 65, 69)",
+      "faithfulness": 0.9120879120879121,
+      "is_faithful": true
+    },
+    {
+      "query": "What tax reforms are proposed, such as VAT or CIT?",
+      "retrieved_pages": [
+        5,
+        69,
+        65,
+        70,
+        39,
+        3,
+        64,
+        62,
+        42,
+        42
+      ],
+      "ground_truth_pages": [
+        20,
+        21
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "fiscal prudence is welcome. The positive outlook provides an opportunity to accelerate revenue diversification including to introduce a value-added tax and broaden the corporate income tax, enhance spending efficiency and gradually align domestic energy prices with export prices, and reorient spending to enable private sector-driven growth. Adopting a full-fledged medium-term fiscal framework, anchored by the benchmark to ensure intergenerational equity, will enhance fiscal sustainability while securing priority spending. Greater fiscal transparency and risk management, including on Public-Private Partnerships, will support the strategy. Monetary and financial sector policies: The currency peg continues to serve the country well. Efforts to strengthen liquidity. (Source: pages 5, 65, 69)",
+      "faithfulness": 0.927710843373494,
+      "is_faithful": true
+    },
+    {
+      "query": "What is Qatar's LNG expansion plan?",
+      "retrieved_pages": [
+        14,
+        67,
+        5,
+        47,
+        54,
+        34,
+        53,
+        16,
+        28,
+        70
+      ],
+      "ground_truth_pages": [
+        22,
+        23
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Qatar has fiscal space to respond to a major growth slowdown. Fiscal policy should be anchored in a medium-term framework to reduce the risk of procyclicality. Continue to closely monitor banking sector developments to ensure financial stability. Accelerate structural reforms to boost economic diversification and non-hydrocarbon potential output. (Source: pages 5, 14, 67)",
+      "faithfulness": 0.8913043478260869,
+      "is_faithful": true
+    },
+    {
+      "query": "How will LNG production impact GDP?",
+      "retrieved_pages": [
+        39,
+        3,
+        62,
+        50,
+        63,
+        69,
+        5,
+        64,
+        60,
+        40
+      ],
+      "ground_truth_pages": [
+        23,
+        24
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "The Qatar Economic and Monetary Review (QEMR) is a quarterly review of Qatar’s economic and financial performance. (Source: pages 3, 39, 62)",
+      "faithfulness": 0.5263157894736842,
+      "is_faithful": true
+    },
+    {
+      "query": "What are the risks related to hydrocarbon prices?",
+      "retrieved_pages": [
+        3,
+        50,
+        61,
+        69,
+        68,
+        5,
+        65,
+        62,
+        70,
+        43
+      ],
+      "ground_truth_pages": [
+        25,
+        26
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "The outlook for Qatar’s economy is expected to be favourable in the medium and long term, driven by strong tourism and policy measures introduced in 2023. However, if ambitious NDS3 initiatives lead to resource misallocation, both the public finance and growth prospect would be affected. Executive Board Assessment2 Executive Directors agreed with the thrust of the staff appraisal. They welcomed the authorities’ commitment to continued fiscal prudence and called for accelerating fiscal reforms. They recommended adopting a medium-term fiscal anchor to help ensure intergenerational equity, and reiterated the need to accelerate revenue diversification, particularly by introducing the value-added tax. Directors welcomed the newly introduced risk-based supervision and recommended formalizing the financial safety net and continuing to adjust macroprudential policies to mitigate potential macro-financial risks. Directors encouraged the authorities to sustain their progress in fighting financial crimes. Directors agreed that the exchange rate peg continues to serve Qatar well. They concurred that, as conditions allow, strengthening the operational framework would further enhance monetary policy transmission. (Source: pages 3, 50, 61)",
+      "faithfulness": 0.943089430894309,
+      "is_faithful": true
+    },
+    {
+      "query": "What workforce reforms are discussed?",
+      "retrieved_pages": [
+        69,
+        65,
+        70,
+        3,
+        70,
+        42,
+        60,
+        41,
+        63,
+        62
+      ],
+      "ground_truth_pages": [
+        30,
+        31
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Commentary: Staff assesses that risks from pension financing needs are low. The pension system covers Qatari nationals, around 10% of Qatar's total population. Key revisions made in 2023 enhanced the system's sustainability. The authorities plan to conduct and publish own sustainability study.:. (Source: pages 65, 69, 70)",
+      "faithfulness": 0.8636363636363636,
+      "is_faithful": true
+    },
+    {
+      "query": "How is Qatar improving skilled labor availability?",
+      "retrieved_pages": [
+        67,
+        5,
+        26,
+        34,
+        28,
+        73,
+        78,
+        70,
+        24,
+        54
+      ],
+      "ground_truth_pages": [
+        31,
+        32
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Growth normalization after the 2022 FIFA World Cup continued with signs of activities strengthening more recently. Fiscal and external surpluses softened mainly due to lower hydrocarbon prices. Banks are healthy but pockets of vulnerabilities remain. Reform momentum has strengthened, guided by the Third National Development Strategy (NDS3). Outlook and risks: Near-term growth is expected to strengthen gradually. The medium- term outlook is more favorable, bolstered by massive LNG production expansion and reform gains. Fiscal policy: The authorities’ commitment to continued fiscal prudence is welcome. The positive outlook provides an opportunity to accelerate revenue diversification including to introduce a value-added tax and broaden the corporate income tax, enhance spending efficiency and gradually align domestic energy prices with export prices, and reorient spending to enable private sector-driven growth. Adopting a full-fledged medium-term fiscal framework, anchored by the benchmark to ensure intergenerational equity, will enhance fiscal sustainability while securing priority spending. Greater fiscal transparency and risk management, including on Public-Private Partnerships, will support the strategy. Monetary and financial sector policies: The currency peg continues to serve the country well. (Source: pages 5, 26, 67)",
+      "faithfulness": 0.9632352941176471,
+      "is_faithful": true
+    },
+    {
+      "query": "What steps are being taken to boost private-sector employment?",
+      "retrieved_pages": [
+        69,
+        5,
+        65,
+        43,
+        70,
+        63,
+        3,
+        31,
+        70,
+        60
+      ],
+      "ground_truth_pages": [
+        32,
+        33
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "TABLE FROM PAGE 69: Fiscal Policy: The medium-term fiscal strategy should balance sustained fiscal prudence and transformation to a private sector-led economy. The authorities plan to align spending with reform priorities in line with NDS3, including towards building climate resilience and human capital. Accelerate revenue diversification, including via VAT introduction and CIT broadening. Preparation for the implementation of the global minimum CIT is underway—its introduction is expected to be at the beginning of 2025. Rationalize wage bill and continue subsidy reforms. (Source: pages 5, 65, 69)",
+      "faithfulness": 0.8695652173913043,
+      "is_faithful": true
+    },
+    {
+      "query": "What climate-related initiatives are mentioned?",
+      "retrieved_pages": [
+        69,
+        3,
+        70,
+        63,
+        42,
+        59,
+        68,
+        50,
+        60,
+        41
+      ],
+      "ground_truth_pages": [
+        35,
+        36
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "The Executive Board’s assessment of Qatar’s macroeconomic policies is based on a series of recommendations from the National Planning Council. (Source: pages 3, 69, 70)",
+      "faithfulness": 0.7391304347826086,
+      "is_faithful": true
+    },
+    {
+      "query": "How is Qatar addressing energy pricing reforms?",
+      "retrieved_pages": [
+        67,
+        5,
+        53,
+        14,
+        28,
+        34,
+        24,
+        54,
+        16,
+        70
+      ],
+      "ground_truth_pages": [
+        36,
+        37
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.0,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.0,
+        "reciprocal_rank": 0.0,
+        "average_precision": 0.0
+      },
+      "answer": "Growth normalization after the 2022 FIFA World Cup continued with signs of activities strengthening more recently. Fiscal and external surpluses softened mainly due to lower hydrocarbon prices. Banks are healthy but pockets of vulnerabilities remain. Reform momentum has strengthened, guided by the Third National Development Strategy (NDS3). Outlook and risks: Near-term growth is expected to strengthen gradually. The medium- term outlook is more favorable, bolstered by massive LNG production expansion and reform gains. Fiscal policy: The authorities’ commitment to continued fiscal prudence is welcome. The positive outlook provides an opportunity to accelerate revenue diversification including to introduce a value-added tax and broaden the corporate income tax, enhance spending efficiency and gradually align domestic energy prices with export prices, and reorient spending to enable private sector-driven growth. Adopting a full-fledged medium-term fiscal framework, anchored by the benchmark to ensure intergenerational equity, will enhance fiscal sustainability while securing priority spending. Greater fiscal transparency and risk management, including on Public-Private Partnerships, will support the strategy. Monetary and financial sector policies: The currency peg continues to serve the country well. (Source: pages 5, 53, 67)",
+      "faithfulness": 0.9632352941176471,
+      "is_faithful": true
+    },
+    {
+      "query": "Summarize the key insights and conclusions from the entire document.",
+      "retrieved_pages": [
+        61,
+        62,
+        70,
+        70,
+        65,
+        3,
+        50,
+        62,
+        63,
+        39
+      ],
+      "ground_truth_pages": [
+        1,
+        2,
+        3,
+        75,
+        76,
+        77,
+        78
+      ],
+      "metrics": {
+        "recall@1": 0.0,
+        "recall@5": 0.0,
+        "recall@10": 0.14285714285714285,
+        "precision@1": 0.0,
+        "precision@5": 0.0,
+        "precision@10": 0.1,
+        "reciprocal_rank": 0.16666666666666666,
+        "average_precision": 0.16666666666666666
+      },
+      "answer": "TABLE FROM PAGE 62: Final Fanchart (Percent of GDP) Debt fanchart module 150 5-25 (Source: pages 61, 62, 70)",
+      "faithfulness": 0.5555555555555556,
+      "is_faithful": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# Model Configuration
+models:
+  clip_model: "laion/CLIP-ViT-B-32-laion2B-s34B-b79K"
+  generation_model: "google/flan-t5-large"
+  
+# Chunking Parameters
+chunking:
+  text_chunk_size: 256          # tokens (smaller for precision)
+  text_overlap: 100             # tokens (more overlap for context)
+  table_max_size: 1500          # tokens (larger for complete tables)
+  image_context_window: 150     # tokens before/after image
+  
+# Embedding Configuration
+embeddings:
+  dimension: 512                # CLIP embedding size
+  normalize: true               # L2 normalization
+  batch_size: 32                # Batch size for embedding
+  
+# Retrieval Parameters
+retrieval:
+  bm25_top_k: 100               # More BM25 candidates
+  faiss_top_k: 100              # More FAISS candidates  
+  rrf_k: 60                     # RRF constant
+  final_top_k: 20               # More results for generation (was 15)
+  bm25_weight: 1.5              # Boost BM25 for text queries
+  
+# Generation Parameters
+generation:
+  max_new_tokens: 512           # Longer answers
+  temperature: 0                # Deterministic
+  num_beams: 4                  # Beam search for quality
+  
+# Evaluation
+evaluation:
+  test_queries_path: "data/test_queries.json"
+  metrics: ["recall@1", "recall@5", "recall@10", "mrr", "precision@5"]
+  
+# Paths
+paths:
+  raw_data: "data/raw/"
+  processed_data: "data/processed/"
+  faiss_index: "data/indices/faiss.index"
+  bm25_index: "data/indices/bm25.pkl"
+  metadata_db: "data/metadata/chunks.db"

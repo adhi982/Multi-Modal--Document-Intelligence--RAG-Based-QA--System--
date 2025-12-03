@@ -1,0 +1,41 @@
+# Core ML
+torch>=2.0.0
+transformers>=4.35.0
+sentence-transformers>=2.2.2
+
+# PDF Processing
+pymupdf>=1.23.0
+pdfplumber>=0.10.0
+camelot-py[cv]>=0.11.0
+
+# OCR
+easyocr>=1.7.0
+
+# Layout Analysis
+unstructured[local-inference]>=0.10.0
+layoutparser>=0.3.4
+
+# Vector Search
+faiss-cpu>=1.7.4
+rank-bm25>=0.2.2
+
+# Chunking & RAG
+langchain>=0.1.0
+langchain-text-splitters>=0.0.1
+llama-index>=0.9.0
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+pillow>=10.0.0
+
+# Evaluation
+scikit-learn>=1.3.0
+
+# UI & Visualization
+streamlit>=1.28.0
+plotly>=5.17.0
+
+# Utilities
+pyyaml>=6.0
+tqdm>=4.66.0
