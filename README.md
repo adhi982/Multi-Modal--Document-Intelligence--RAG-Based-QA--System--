@@ -4,13 +4,13 @@ A production-quality RAG-based QA system that processes text, tables, and images
 
 ## Features
 
-- ✅ **Multi-modal Ingestion**: Text, tables, images, and OCR
-- ✅ **Unified Embeddings**: CLIP-based text and image embeddings in shared space
-- ✅ **Hybrid Retrieval**: BM25 + FAISS with RRF fusion
-- ✅ **Cross-modal Reranking**: CLIP similarity scoring
-- ✅ **Grounded Generation**: FLAN-T5 with citations
-- ✅ **Multi-document Briefing**: Clustered summarization
-- ✅ **Evaluation Dashboard**: Metrics visualization
+-  **Multi-modal Ingestion**: Text, tables, images, and OCR
+-  **Unified Embeddings**: CLIP-based text and image embeddings in shared space
+-  **Hybrid Retrieval**: BM25 + FAISS with RRF fusion
+-  **Cross-modal Reranking**: CLIP similarity scoring
+-  **Grounded Generation**: FLAN-T5 with citations
+-  **Multi-document Briefing**: Clustered summarization
+-  **Evaluation Dashboard**: Metrics visualization
 
 ## Architecture
 
